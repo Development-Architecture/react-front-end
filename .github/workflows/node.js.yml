@@ -1,0 +1,30 @@
+# This workflow will do a clean install of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: MockShutterStock React Deploy
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Deploy to production
+      uses: appleboy/ssh-action@master
+      with:
+          username: ${{ secrets.SECRET_USERNAME }}
+          host: ${{ secrets.SECRET_HOST }}
+          password: ${{ secrets.SECRET_PASSWORD }}
+          script: |
+            cd mock_react
+            git fetch origin master
+            git pull origin master
+            npm run build
+            rsync -a build /var/www/html/mock_react/
+            rsync -a .htaccess /var/www/html/mock_react/build/

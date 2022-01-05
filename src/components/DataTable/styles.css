@@ -1,0 +1,98 @@
+.list-table-container .list-table-header {
+  background: #fcfcfc;
+  padding: 10px 20px;
+  border-bottom: 1px solid #e1dddd;
+  align-items: baseline;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.list-table-container .list-table-header span {
+  display: inline;
+  /* text-align: center; */
+}
+.list-table-body-container .list-table-body {
+  background: #ffffff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #e1dddd;
+  align-items: baseline;
+}
+.list-table-body-container .list-table-body .text-gray {
+  color: gray;
+}
+.list-table-body-container .list-table-body .view-btn {
+  font-size: 24px;
+  color: green;
+}
+.list-table-body-container .list-table-body .action-btn  {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.list-table-body-container .list-table-body .edit-btn {
+  font-size: 24px;
+  color: #06a9f4;
+}
+.list-table-body-container .list-table-body .del-btn {
+  font-size: 24px;
+  color: red;
+}
+
+.list-table-body-container .list-table-body span {
+  display: inline;
+  overflow-wrap: break-word;
+  /* text-align: center; */
+}
+.list-table-body-container .list-table-body:hover {
+  background: #fcfcfc;
+}
+.loading-spinner {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 12rem;
+  vertical-align: middle;
+  font-size: 6rem;
+}
+.list-table-title-container {
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 19px 20px;
+  border-bottom: 1px solid #dddddd;
+}
+.list-table-title-container .table-title {
+  font-size: 1.6rem;
+}
+.list-table-paginate-container{
+    background: #fcfcfc;
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+    padding: 7px 0;
+}
+.list-table-paginate-container .paginate-item{
+    background: #ffffff;
+    padding: 10px 13px;
+    color: gray;
+    border: 1px solid #b7b7b7;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 8px;
+}
+.list-table-paginate-container .paginate-item:first-child {
+  border: none;
+}
+.list-table-paginate-container .paginate-item:last-child {
+  border: none;
+}
+.list-table-paginate-container .paginate-item.selected{
+    background: #C4C4C4;
+    color: #fff;
+    font-weight: bold;
+}
+.list-table-paginate-container .paginate-item.unselected {
+  background: #f4f5f7;
+  color: #000;
+}
+.list-table-paginate-container .paginate-item svg {
+  color: #000;
+}

@@ -1,0 +1,56 @@
+.account-wrappers{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.account-wrappers .account-title{
+    font-size: 3rem;
+    margin: 17px 0;
+}
+.account-wrappers .account-sub-title{
+    margin: 10px 0;
+}
+.account-wrappers .account-wrapper .account-item{
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    align-items: center;
+    padding: 6px 0;
+    margin: 15px auto;
+}
+.account-wrappers .account-wrapper .account-item .account-value{
+    color: #838383;
+}
+.account-wrappers .account-wrapper .account-item .chg-link{
+    color: #838383;
+    cursor: pointer;
+}
+
+.edit-modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content */
+.edit-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+}
+.edit-modal-content .close {
+    cursor: pointer;
+}
+  

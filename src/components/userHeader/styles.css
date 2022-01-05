@@ -1,0 +1,17 @@
+
+.header-wrapper{
+    padding: 11px 4px;
+    border-bottom: 1px solid #efefef;
+    box-shadow: 0px 1px 8px #888888;
+}
+.header-wrapper .nav-title{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.header-wrapper .nav-link{
+    padding: 0 1rem !important;
+    color: black;
+}
+.filter-logo{
+    width: 40px;
+}
